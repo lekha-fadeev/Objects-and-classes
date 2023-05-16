@@ -24,7 +24,7 @@ public class Main {
         System.out.println(LeoTolstoy.equals(Leo));
         System.out.println(warAndPeace.equals(DeadSouls));
 
-        System.out.println();
+
         System.out.println(warAndPeace.hashCode());
         System.out.println(DeadSouls.hashCode());
         System.out.println();
