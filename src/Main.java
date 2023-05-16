@@ -20,14 +20,14 @@ public class Main {
 
         Author Leo = new Author("Лев", "Толстой");
         Book war = new Book("Война и мир", LeoTolstoy, 1865);
-        System.out.println();
+
         System.out.println(LeoTolstoy.equals(Leo));
         System.out.println(warAndPeace.equals(DeadSouls));
 
-        System.out.println();
+
         System.out.println(warAndPeace.hashCode());
         System.out.println(DeadSouls.hashCode());
-        System.out.println();
+
         System.out.println(LeoTolstoy.hashCode());
         System.out.println(Leo.hashCode());
 
