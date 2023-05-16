@@ -1,6 +1,6 @@
 public class Main {
+    public static void main(String[] args) {
 
-    public static void books() {
         Author LeoTolstoy = new Author("Лев", "Толстой");
         Book warAndPeace = new Book("Война и мир", LeoTolstoy, 1865);
 
@@ -16,13 +16,20 @@ public class Main {
         System.out.println();
         System.out.println(String.format("%s написана автором %s %s в %s году", warAndPeace.getName(), warAndPeace.getAuthor().getName(),warAndPeace.getAuthor().getSecondName(), warAndPeace.getYear()));
         System.out.println(String.format("%s написана автором %s %s в %s году", DeadSouls.getName(), DeadSouls.getAuthor().getName(),DeadSouls.getAuthor().getSecondName(), DeadSouls.getYear()));
-    }
+        System.out.println();
 
-    public static void main(String[] args) {
-        task();
-    }
-    public static void task() {
-        System.out.println("Задача");
-        books();
+        Author Leo = new Author("Лев", "Толстой");
+        Book war = new Book("Война и мир", LeoTolstoy, 1865);
+
+        System.out.println(LeoTolstoy.equals(Leo));
+        System.out.println(warAndPeace.equals(DeadSouls));
+
+        System.out.println();
+        System.out.println(warAndPeace.hashCode());
+        System.out.println(DeadSouls.hashCode());
+        System.out.println();
+        System.out.println(LeoTolstoy.hashCode());
+        System.out.println(Leo.hashCode());
+
     }
 }
