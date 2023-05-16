@@ -27,7 +27,7 @@ public class Main {
 
         System.out.println(warAndPeace.hashCode());
         System.out.println(DeadSouls.hashCode());
-
+        System.out.println();
         System.out.println(LeoTolstoy.hashCode());
         System.out.println(Leo.hashCode());
 
